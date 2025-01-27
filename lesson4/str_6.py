@@ -5,3 +5,12 @@
 Программа должна работать с любой другой строкой с подобными тэгами.
 
 '''
+
+
+text = "Это тестовая <start>строка для изучения<end> строковых операций"
+
+
+start_index = text.find("<start>") + len("<start>")
+end_index = text.find("<end>")
+
+print(text[start_index:end_index])

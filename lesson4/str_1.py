@@ -7,3 +7,17 @@
      -* количество гласных в данной фразе. Нельзя использовать if и for.
 
 '''
+
+info = (input("Введите фразу: "))
+
+symb = len(info)
+a = info.split()
+symb_2 = len(a)
+
+sogl = ["а", "у", "о", "ы", "и", "э", "я", "ю", "ё", "е"]
+
+g = "а" in info
+
+print(symb_2)
+print(symb)
+print(g)

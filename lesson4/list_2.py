@@ -10,6 +10,4 @@ user_data = [input(f"Введите имя {i+1}: ") for i in range(5)]
 
 user_data.sort()
 
-print("Отсортированный список: ", user_data, "\nИмя 'Вася' находится в списке? Ответ: ", "Вася" in user_data)
-
-
+print(f"Отсортированный список: {user_data} \nИмя 'Вася' находится в списке? Ответ: {"Вася" in user_data}")
