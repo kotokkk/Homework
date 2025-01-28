@@ -8,16 +8,16 @@
 
 '''
 
-info = (input("Введите фразу: "))
+info = input("Введите фразу: ")
 
 symb = len(info)
+
 a = info.split()
 symb_2 = len(a)
 
-sogl = ["а", "у", "о", "ы", "и", "э", "я", "ю", "ё", "е"]
+vowels = "ауоыиеэяюёеАУОЫИЭЯЮЁЕ"
+vowel_count = sum(map(lambda x: x in vowels, info))
 
-g = "а" in info
-
-print(symb_2)
-print(symb)
-print(g)
+print("Количество слов:", symb_2)
+print("Количество символов:", symb)
+print("Количество гласных:", vowel_count)
