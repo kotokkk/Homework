@@ -10,3 +10,30 @@
     - вывести сумму всех товаров
 
 """
+# a = {'apple': '10', 'pear': '15', 'rasp': '20'}
+
+first = input("Введите товар №1 и его цену (через пробел): ")
+second = input("Введите товар №2 и его цену (через пробел): ")
+third = input("Введите товар №3 и его цену (через пробел): ")
+
+f_sp = list(first.split())
+sec_sp = list(second.split())
+th_sp = list(third.split())
+
+all_dict = dict([f_sp, sec_sp, th_sp])
+
+name_of_prod = input("Введите наименвание товара: ")
+
+# p = int(a[n])
+
+# l = p * 1.15
+
+
+# print(l)
+
+# s = a.values()
+
+# j = list(s)
+
+# o = sum(map(int, j))
+# print(o)
