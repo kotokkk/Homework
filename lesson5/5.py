@@ -14,4 +14,4 @@ space = Counter(phrase.replace(" ", ""))
 
 print(f"""Количество уникальных символов во фразе: {len(space.keys())}
 Количество уникальных слов во фразе: {len(set(phrase.split()))}
-Символ, который встречается во фразе чаще всего: {next(iter(dict(space.most_common())))}""")
+Символ, который встречается во фразе чаще всего: {next(iter(space.most_common()))}""")

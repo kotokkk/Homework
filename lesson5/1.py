@@ -21,11 +21,11 @@ print(all_dict)
 
 name_of_prod = input("Введите наименвание товара: ").lower()
 
-price = int(all_dict[name_of_prod])
+price = float(all_dict[name_of_prod])
 
 print(f"Цена введенного товара, увеличенная на 15% = {price * 1.15:.2f}")
 
 val = all_dict.values()
 new_list = list(val)
 
-print(f"Сумма всех товаров: {sum(map(int, new_list))}")
+print(f"Сумма всех товаров: {sum(map(float, new_list))}")
