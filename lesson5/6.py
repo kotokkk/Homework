@@ -26,6 +26,6 @@ set1 = set(map(int, first.split()))
 set2 = set(map(int, second.split()))
 set3 = set(map(int, third.split()))
 
-print(f"Все уникальные числа по возрастанию: {', '.join(map(int, sorted(set1 | set2 | set3)))}")
+print(f"Все уникальные числа по возрастанию: {', '.join(map(str, sorted(set1 | set2 | set3)))}")
 print(f"Числа, которые есть в каждой строке: {', '.join(map(str, set1 & set2 & set3))}")
 print(f"Числа, которые есть только в одной из трех строк: {', '.join(map(str, (set1 - set2 - set3) | (set2 - set1 - set3) | (set3 - set1 - set2)))}")
