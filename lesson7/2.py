@@ -8,3 +8,12 @@
 '''
 
 
+while True:
+    phrase = input("Введите фразу (минимум из трех слов): ")
+    words = phrase.split()
+    if len(words) < 3:
+        print("Фраза должна состоять минимум из трех слов.")
+    else:
+        transformed_phrase = " ".join("".join(char * (i + 1) for i, char in enumerate(word)) for word in words)
+        print(transformed_phrase)
+        break
