@@ -14,3 +14,14 @@
     Неправильный формат. Пример: '2 + 4'
 
 """
+# user_input = '2+2'
+# op = '+-*/**'
+
+while True:
+    user_input = input("Введите пример или 'стоп' для завершения: ")
+    if user_input.lower() == "стоп":
+        break
+    a = eval(user_input)
+print(f"{user_input} = {a}") 
+
+

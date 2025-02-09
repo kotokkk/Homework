@@ -14,3 +14,9 @@
 
 
 '''
+
+l = ['qwertyu','asdfggh','zxcvbnm','yuiop[]','hjklasd','mnbvnbv']
+
+
+for index, item in enumerate(l):
+    print(f"{index+1} - {item} - {item[index]}")
