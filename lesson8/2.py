@@ -10,14 +10,14 @@ def count_rec(a: float, b: float, calculate_area=True):
     if calculate_area:
         return a * b
     return (a + b) * 2
-
+# пример использования
 print(count_rec(5, 6, False))
 
 
 
 
 
-# с проверкой на возможне ошибки
+# с проверкой на возможные ошибки
 
 def rect(a, b, calculate_area=True):
   try:
@@ -32,7 +32,7 @@ def rect(a, b, calculate_area=True):
   except Exception as e:
     print("Ошибка:", e)
     return None 
-
+# пример использования
 print(rect(5, 10))
 print(rect(5, 10, False))
 print(rect("a", 10))
