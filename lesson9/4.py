@@ -13,11 +13,12 @@
 
 
 list1 = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+list1.copy()
 
 print(f"{list1} Исходный список")
-print(f"{list(map(lambda x: x ** 2, list1.copy()))} Список после возведения в квадрат")
-print(f"{list(map(lambda x: x + 3 if x % 2 == 0 else x, list1.copy()))} Список после прибавления 3 к четным")
-print(f"{list(map(lambda x: x * 2 if x % 2 == 0 else x * 3, list1.copy()))} Список после умножения четных на 2 и нечетных на 3")
+print(f"{list(map(lambda x: x ** 2, list1))} Список после возведения в квадрат")
+print(f"{list(map(lambda x: x + 3 if x % 2 == 0 else x, list1))} Список после прибавления 3 к четным")
+print(f"{list(map(lambda x: x * 2 if x % 2 == 0 else x * 3, list1))} Список после умножения четных на 2 и нечетных на 3")
 
 
 
@@ -46,9 +47,9 @@ print(f"{list(map(lambda x: x * 2 if x % 2 == 0 else x * 3, list1.copy()))} Сп
 #     """Умножает четные числа на 2 и нечетные на 3. """
 #     return x * 2 if x % 2 == 0 else x * 3
 
-
+#list1.copy()
 
 # print(f"{list1} Исходный список")
-# print(f"{list(map(elevation, list1.copy()))} Список после возведения в квадрат")
-# print(f"{list(map(calculation, list1.copy()))} Список после прибавления 3 к четным")
-# print(f"{list(map(even_odd, list1.copy()))} Список после умножения четных на 2 и нечетных на 3")
+# print(f"{list(map(elevation, list1))} Список после возведения в квадрат")
+# print(f"{list(map(calculation, list1))} Список после прибавления 3 к четным")
+# print(f"{list(map(even_odd, list1))} Список после умножения четных на 2 и нечетных на 3")
